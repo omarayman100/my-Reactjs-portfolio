@@ -156,3 +156,41 @@ position: relative;
     font-size: var(--smaller-font-size);
     line-height: 1.6;
 }
+
+@media (max-width: 540px) {
+    .about__container {
+      grid-template-columns: 1fr;
+    width: 90%;
+    }
+    
+    .about__info {
+      text-align: center;
+    }
+    
+    .Stats {
+      text-align: center;
+    }
+    
+    .skills__container {
+      grid-template-columns: 4fr;
+    }
+    
+    .resume__container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .about__container {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills__container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .resume__container {
+      grid-template-columns: 1fr;
+    }
+  }
